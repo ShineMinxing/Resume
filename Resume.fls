@@ -1076,9 +1076,9 @@ INPUT YOLO无人机识别.jpg
 INPUT ./多图像源融合估计.jpg
 INPUT ./多图像源融合估计.jpg
 INPUT 多图像源融合估计.jpg
-INPUT ./神经网络.jpg
-INPUT ./神经网络.jpg
-INPUT 神经网络.jpg
+INPUT ./SLAM方法.jpg
+INPUT ./SLAM方法.jpg
+INPUT SLAM方法.jpg
 INPUT Resume.aux
 INPUT ./Resume.out
 INPUT ./Resume.out

@@ -1,11 +1,11 @@
 # Fdb version 3
-["xdvipdfmx"] 1762744596 "Resume.xdv" "Resume.pdf" "Resume" 1762744596
-  "Resume.xdv" 1762744483 45868 eadb79ee3c952f7953a3561a5c57ebda "xelatex"
+["xdvipdfmx"] 1763598892 "Resume.xdv" "Resume.pdf" "Resume" 1763598892
+  "Resume.xdv" 1763598859 46004 3b774b2044db9b0aaa2f7ff64550964d "xelatex"
   (generated)
   "Resume.pdf"
-["xelatex"] 1762744482 "/home/unitree/WorkSpace/Resume/Resume.tex" "Resume.xdv" "Resume" 1762744596
+["xelatex"] 1763598858 "/home/unitree/WorkSpace/Resume/Resume.tex" "Resume.xdv" "Resume" 1763598892
   "/etc/texmf/web2c/texmf.cnf" 1750323379 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/unitree/WorkSpace/Resume/Resume.tex" 1762744596 27284 3a81a1dc051897b8e2b6b8bba84f15da ""
+  "/home/unitree/WorkSpace/Resume/Resume.tex" 1763598858 27359 04b44149d466cf6b5d71a6645be61e6a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -191,9 +191,10 @@
   "AR眼镜头部运动跟随.jpg" 1756359375 133446 9d5b221d55a1d86dc168aa0ae930af02 ""
   "QR_Bilibili.png" 1757215164 159018 99e3999f39f02d720bea456cbc4b6689 ""
   "QR_WeChat.png" 1755237425 182386 df8af7a77e299fcf542e75e17ddb9595 ""
-  "Resume.aux" 1762744483 652 9af601cce4e905234811cb740f97ee79 "xelatex"
-  "Resume.out" 1762744482 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "Resume.tex" 1762744596 27284 3a81a1dc051897b8e2b6b8bba84f15da ""
+  "Resume.aux" 1763598859 652 9af601cce4e905234811cb740f97ee79 "xelatex"
+  "Resume.out" 1763598859 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "Resume.tex" 1763598858 27359 04b44149d466cf6b5d71a6645be61e6a ""
+  "SLAM方法.jpg" 1763436970 386795 a9d91b63c1cd0aed51081fbfc8a446f6 ""
   "SMX.jpg" 1756359375 219726 19fe14e47c1b53d614cd4a2462e957bd ""
   "YOLO无人机识别.jpg" 1756359375 178216 917f4d38a5c2b005cc48029b0efbf590 ""
   "人脸识别跟踪与光点跟踪.jpg" 1756359375 128330 aff2cef7886c7aa5bbca694d68a6bf48 ""
@@ -202,7 +203,6 @@
   "导航和语音交互.jpg" 1756359375 169441 3dfd398ac0c8bfe757ed6c08c7f27794 ""
   "户外行走.jpg" 1756359375 96982 78d5cd18da4e7d7d4319b4d30c4c1a51 ""
   "爬楼梯.jpg" 1756359375 178963 9d4a0a73db0f495dfcafeba3189bc1a3 ""
-  "神经网络.jpg" 1756359375 193554 6552569dec1b7b85bea5fd0ec2bc9075 ""
   (generated)
   "Resume.aux"
   "Resume.log"

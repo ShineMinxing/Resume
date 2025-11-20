@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.6.20)  10 NOV 2025 11:14
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.6.20)  20 NOV 2025 08:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1003,118 +1003,118 @@ LaTeX Font Warning: Font shape `TU/FontAwesome(0)/bx/n' undefined
 (Font)              using `TU/FontAwesome(0)/m/n' instead on input line 428.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--441
+Underfull \hbox (badness 10000) in paragraph at lines 438--442
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 451--455
+Underfull \hbox (badness 10000) in paragraph at lines 452--456
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 462--466
+Underfull \hbox (badness 10000) in paragraph at lines 463--467
 
  []
 
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 474--478
+Underfull \hbox (badness 10000) in paragraph at lines 475--479
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 485--489
+Underfull \hbox (badness 10000) in paragraph at lines 486--490
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--499
+Underfull \hbox (badness 10000) in paragraph at lines 496--500
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--506
+Underfull \hbox (badness 10000) in paragraph at lines 507--507
 
  []
 
 
-Overfull \hbox (4.84172pt too wide) in alignment at lines 506--506
+Overfull \hbox (4.84172pt too wide) in alignment at lines 507--507
 [] 
  []
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 510.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 511.
 
 LaTeX Font Warning: Font shape `TU/NotoSerifCJKSC(0)/m/it' undefined
-(Font)              using `TU/NotoSerifCJKSC(0)/m/n' instead on input line 510.
+(Font)              using `TU/NotoSerifCJKSC(0)/m/n' instead on input line 511.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--511
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 514--517
+Underfull \hbox (badness 10000) in paragraph at lines 509--512
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 520--523
+Underfull \hbox (badness 10000) in paragraph at lines 515--518
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--529
+Underfull \hbox (badness 10000) in paragraph at lines 521--524
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--535
+Underfull \hbox (badness 10000) in paragraph at lines 527--530
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 540--542
+Underfull \hbox (badness 10000) in paragraph at lines 534--536
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 547--549
+Underfull \hbox (badness 10000) in paragraph at lines 541--543
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 554--556
+Underfull \hbox (badness 10000) in paragraph at lines 548--550
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 561--563
+Underfull \hbox (badness 10000) in paragraph at lines 555--557
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 568--570
+Underfull \hbox (badness 10000) in paragraph at lines 562--564
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 569--571
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 584--584
+Underfull \hbox (badness 10000) in paragraph at lines 585--585
 
  []
 
 
-Overfull \hbox (1.18564pt too wide) in alignment at lines 584--584
+Overfull \hbox (1.18564pt too wide) in alignment at lines 585--585
 [] 
  []
 
 Missing character: There is no 🎥 ("1F3A5) in font ec-lmssbx10!
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 593.
+(Font)              <8> on input line 594.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 593.
+(Font)              <6> on input line 594.
 File: 24足切换建图.jpg Graphic file (type bmp)
 <24足切换建图.jpg>
 File: 室内行走.jpg Graphic file (type bmp)
@@ -1133,10 +1133,10 @@ File: YOLO无人机识别.jpg Graphic file (type bmp)
 <YOLO无人机识别.jpg>
 File: 多图像源融合估计.jpg Graphic file (type bmp)
 <多图像源融合估计.jpg>
-File: 神经网络.jpg Graphic file (type bmp)
-<神经网络.jpg>
+File: SLAM方法.jpg Graphic file (type bmp)
+<SLAM方法.jpg>
 
-Overfull \hbox (2.37128pt too wide) in paragraph at lines 593--657
+Overfull \hbox (2.37128pt too wide) in paragraph at lines 594--658
 [][] 
  []
 
@@ -1149,11 +1149,11 @@ Package rerunfilecheck Info: File `Resume.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  29075 strings out of 478128
- 633940 string characters out of 5852024
+ 633956 string characters out of 5852024
  1024071 words of memory out of 5000000
  49174 multiletter control sequences out of 15000+600000
  508773 words of font info for 87 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,11n,89p,478b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Resume.xdv (3 pages, 45868 bytes).
+Output written on Resume.xdv (3 pages, 46004 bytes).
