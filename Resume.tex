@@ -9,8 +9,7 @@
 \setCJKmainfont{Noto Serif CJK SC}
 
 % set font default
-\renewcommand*\familydefault{\sfdefault} 	
-\usepackage[T1]{fontenc}
+\renewcommand*\familydefault{\sfdefault}
 
 \usepackage{enumitem}
 \setlist[itemize]{topsep=0pt,itemsep=1pt,leftmargin=*}
@@ -323,9 +322,7 @@
 
 
 \cvsection{个人概况}\\
-\normalsize 近年的科研对象是光电跟踪系统和腿式机器人;
-具体领域是时域信号滤波，多传感器信号融合，目标状态估计，运动轨迹预测;
-实现方法包括鲁棒估计算法、自适应估计算法、神经网络估计算法。\\
+\normalsize 擅长腿式/轮腿机器人本体里程计、光电跟踪系统鲁棒预测滤波、多站分布式融合估计，具备从鲁棒/自适应估计算法建模、C++/Python实现、ROS2系统集成到实物平台验证的完整开发经验。\\
 
 \cvsection{工作技能}
 \begin{itemize}
@@ -406,15 +403,17 @@
 %	PROFILE
 %----------------------------------------------------------------------------------------
 
-\cvsection{学历}
+\cvsection{教育与经历}
 
-\cvtext{\textbf{2016 - 2020\;青岛大学\;自动化专业\hfill 工学学士}}\\
+\cvtext{\textbf{2016.09 - 2020.06\;青岛大学\;自动化专业\hfill 工学学士}}\\
 
-\cvtext{\textbf{2020 - 2026\;中国科学院大学\;信号与信息处理专业}}\\
+\cvtext{\textbf{2020.09 - 2026.06\;中国科学院大学\;信号与信息处理专业}}\\
 
 \cvtext{\textbf{\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;光电技术研究所\;光场调控科学技术全国重点实验室\hfill 工学博士}}\\
 
-\cvtext{\textbf{2023 - 2024\;新加坡科学技术研究局\;机器人与自动化实验室\hfill 公派留学}}\\
+\cvtext{\textbf{2023.10 - 2024.10\;新加坡科学技术研究局\;机器人与自动化实验室\hfill 访学}}\\
+
+\cvtext{\textbf{2026.01 - 2026.05\;深圳璇玑动力科技有限公司\;里程计算法开发\hfill 实习}}\\
 
 %---------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
@@ -422,29 +421,41 @@
 \cvsection{项目经历}
 
 \noindent
-\large\textbf{腿式机器人搭载光电吊舱实现巡逻与目标跟踪} \normalsize \hfill \textit{2025.02--2026.06}\\[4pt]
+\large\textbf{腿式/轮腿机器人本体感知里程计与运动参数自整定} \normalsize \hfill \textit{2026.01--2026.05}\\[4pt]
+\textbf{成果：}设计CAPO接触锚定里程计，基于IMU与电机信号实现高精度定位，自动化实现运动特性辨识与控制参数生成。\\[-4pt]
+\begin{itemize}
+    \item \textbf{算法设计基本思路：}落足点记录、支撑相位置/速度伪观测、支撑平面高度聚类、多接触航向约束、轮腿接触点滑动补偿、斜面运动高度修正
+    \item \textbf{宇树科技平台情况：}Go2 120m 水平运动回环误差 \textbf{2.3m}，10m竖直运动回环误差 \textbf{0.01m}; Go2W 200m 水平 20m 竖直运动回环误差 \textbf{6.3m/2.6m}
+    \item \textbf{璇玑动力平台情况：}腿式A平台 200m 水平 20m 竖直运动回环误差 \textbf{0.14m/0.12m}；轮腿式B平台同运动路径回环误差 \textbf{0.23m/0.20m}； 轮腿式C平台 700m 水平运动回环误差 \textbf{7.68m}，20米 竖直运动回环误差 \textbf{0.54米}
+    \item \textbf{辨识特性整定参数：}自动执行 X/Y/yaw 方向开环、速度闭环、位置闭环扫频，根据响应曲线辨识运动模型，基于模型自动生成 PID 参数
+    \item \textbf{核心算法纯C++：}可适配双足/四足/轮腿机器人，易跨平台迁移（\href{https://github.com/ShineMinxing/CAPO-LeggedRobotOdometry}{\textbf{\underline{GitHub\faStar{}155}}}\;\raisebox{-0.1ex}{\faExternalLink}）
+\end{itemize}
+
+\vspace{1.2em}
+
+\noindent
+\large\textbf{腿式机器人搭载光电吊舱完成巡逻与目标跟踪} \normalsize \hfill \textit{2025.02--2026.01}\\[4pt]
 \textbf{现有成果：}实现腿式机器人在复杂地形巡逻，光电吊舱检测目标并跟踪。\\[-4pt]
 \begin{itemize}
-    \item 设计纯 C++ 腿式机器人\textbf{运动学里程计}（多传感器融合），支持 ROS1/ROS2 便捷迁移(\href{https://github.com/ShineMinxing/Ros2Go2Estimator}{\textbf{\underline{GitHub\faStar{}106}}}\;\raisebox{-0.1ex}{\faExternalLink})
-    \item \textbf{Cartographer、KISS-ICP、Fast-LIO2、Point-LIO、LIO-SAM} 实现3D SLAM
-	\item \textbf{ROS2 SLAM Toolbox}、\textbf{Nav2-DWBLocalPlanner} 实现2D SLAM与导航
-    \item 集成 \textbf{Vosk、DeepSeek、CosyVoice2} 实现语音交互与指令执行
-    \item 光电吊舱、机器人位姿、机器人运动协同，实现无人机/人脸跟踪
-    \item 实现AR眼镜\href{https://www.bilibili.com/video/BV1rFJHzhEE9/}{\textbf{\underline{引导机器人运动}}\;\raisebox{-0.1ex}{\faExternalLink}}
+    \item \textbf{实现3D SLAM：} \textbf{Cartographer}、KISS-ICP、Fast-LIO2、Point-LIO、LIO-SAM
+	\item \textbf{实现2D SLAM与导航：}  ROS2 SLAM Toolbox、Nav2-DWBLocalPlanner
+    \item \textbf{语音交互并连接LLM、VLM：} Vosk、sherpa、\textbf{DeepSeek、Qwen3.5}、CosyVoice2
+    \item \textbf{实现无人机/人脸跟踪：}光电吊舱、机器人位姿、机器人运动协同、\href{https://www.bilibili.com/video/BV1rFJHzhEE9}{\underline{AR眼镜引导}}\;\raisebox{-0.1ex}{\faExternalLink}
 \end{itemize}
 
 \vspace{1.5em}
 
 \noindent
-\large\textbf{分布式运动平台搭载光电吊舱实现无人机追踪} \normalsize \hfill \textit{2025.07--2026.06}\\[4pt]
-\textbf{现有成果：}实现复杂场景下的无人机位姿识别，预测运动意图，提高融合估计精度。\\[-4pt]
+\large\textbf{腿式机器人相机与双固定相机构建分布式观测系统} \normalsize \hfill \textit{2024.09--2026.06}\\[4pt]
+\textbf{成果：}构建的异步多站观测系统，实现无人机图像域倾角识别、加速度伪观测建模、扩张状态误差角补偿和分布式融合估计。\\[-4pt]
 \begin{itemize}
-    \item ROS2系统采集无人机飞行时的IMU信息，光电吊舱IMU、图像信息
-    \item 检测视频中的所有运动目标，获取像素位置和轮廓尺寸,辨识其中的\textbf{无人机轨迹}
-    \item 解算无人机在图像中的滚转角、俯仰角，并\textbf{自动标注训练数据}
-    \item 无人机数据结合\textbf{DOTAv2.0}数据集，完成\textbf{YOLOv11-obb训练}
-    \item 通过无人机尺寸估计距离，通过无人机的方位角、滚转角、俯仰角估计加速度
-    \item 多个光电吊舱协同工作，实现\href{https://www.bilibili.com/video/BV13we1zEEED/}{\textbf{\underline{分布式传感器的融合估计}}}\;\raisebox{-0.1ex}{\faExternalLink}
+    \item \textbf{多源数据采集与时空对齐：}ROS2 采集无人机 IMU、云台 IMU/编码器、相机图像和机器人本体里程计
+    \item \textbf{弱先验自动标注：}通过运动候选提取、目标轨迹关联、双 IMU 几何反演，\textbf{自动生成}无人机 OBB 旋转框和图像域滚转/俯仰\textbf{弱标签}
+    \item \textbf{YOLO v11m-OBB 训练：}结合自采无人机数据集与DOTA数据集完成训练
+    \item \textbf{倾角--加速度伪观测：}将图像域滚转/俯仰作为强机动趋势线索接入 CKE，增强丢帧、遮挡和强机动阶段的加速度可观测性
+    \item \textbf{异步多站融合：}采用可用性掩码和统计门控处理多相机异步观测、误检和丢帧
+    \item \textbf{外参误差在线补偿：}扩张状态估计补偿目标运动状态与各相机\textbf{安装误差角}
+    \item \href{https://www.bilibili.com/video/BV1SnRQBwEFK}{\underline{\textbf{融合估计\;\raisebox{-0.1ex}{\faExternalLink}：}}}验证集drone类AP$_{50}$达0.973；倾角伪观测使仿真累计误差降低 60.75\%，真实异步多站累计误差降低 18.10\%
 \end{itemize}
 
 \vspace{1.5em}
@@ -461,23 +472,11 @@
 \vspace{1.5em}
 
 \noindent
-\large\textbf{无人机目标识别及倾角提取} \normalsize \hfill \textit{2024.09--2025.02}\\[4pt]
-\textbf{成果：}初步实现无人机无人机位姿识别，预测运动意图，提高估计精度。\\[-4pt]
-\begin{itemize}
-    \item 录制无人机飞行视频，使用 OpenCV、PyDub 获取目标的像素位置与噪声分贝值
-    \item 根据像素位置序列计算加速度（倾角），制作训练数据集
-    \item 基于 \textbf{TensorFlow-Keras-MobileNetV2} 迁移学习获取图像处理模型
-    \item 将倾角特征作为新信号源，提升无人机位置预测精度
-\end{itemize}
-
-\vspace{1.5em}
-
-\noindent
 \large\textbf{腿式机器人里程计设计（新加坡科技局）} \normalsize \hfill \textit{2023.09--2024.09}\\[4pt]
 \textbf{成果：}设计融合估计器，补偿SLAM算法在低纹理退化环境下的定位失准，改善步态规划与姿态控制。\\[-4pt]
 \begin{itemize}
     \item 分析 IMU、SLAM、关节电机编码器数据，设计易扩展的\textbf{融合估计算法框架}
-    \item 利用\textbf{落足点记录}与实时足髋位置构建\href{https://www.bilibili.com/video/BV1UtQfYJExu/}{\textbf{\underline{腿式里程计}}}\;\raisebox{-0.1ex}{\faExternalLink}，显著提升状态估计精度
+    \item 利用\textbf{落足点记录}与实时足髋位置构建腿式里程计，显著提升状态估计精度
     \item 应用容积卡尔曼估计法消除\textbf{运动学数据噪声}
 \end{itemize}
 
@@ -487,18 +486,8 @@
 \large\textbf{双反射镜跟踪平台搭建} \normalsize \hfill \textit{2021.09--2023.09}\\[4pt]
 \textbf{成果：}搭建由两个快反镜、激光器、CCD 组成的平台，可同时模拟目标运动和测试控制算法。\\[-4pt]
 \begin{itemize}
-    \item 完成信号解耦与处理，设计\textbf{零极点对消法}的双闭环控制系统
+    \item 在VxWorks系统中完成信号解耦与处理，设计\textbf{零极点对消法}的双闭环控制系统
     \item 初步构建和测试 \textbf{C 语言估计算法库}以补偿信号延迟：卡尔曼估计、扩展卡尔曼估计、2种无迹卡尔曼估计、2种交互式多模型估计、鲁棒估计、结合3种不同自适应因子的鲁棒估计、线性回归参数估计、线性回归参数卡尔曼估计
-\end{itemize}
-
-\vspace{1.5em}
-
-\noindent
-\large\textbf{光轴稳定扰动抑制平台改进} \normalsize \hfill \textit{2019.10--2021.09}\\[4pt]
-\textbf{成果：}改进由三个可运动层构成的平台，设计控制算法、估计算法提高跟踪精度。\\[-4pt]
-\begin{itemize}
-    \item 在VxWorks系统中设计\textbf{零极点对消法}的三闭环控制系统
-    \item 设计和测试多种鲁棒估计算法以补偿信号延迟
 \end{itemize}
 
 \vspace{1.5em}
@@ -530,20 +519,35 @@
 
 % \small 该论文提出了一种用于不确定线性系统的鲁棒状态估计器。它利用卡方检验识别异常值并自适应地调整观测噪声协方差，再通过改进的鲁棒估计算法补偿模型不确定性，实现了误差累积的有效降低，且相较传统算法的优势随观测噪声恶化程度的增加而显著提升。\\
 
+\noindent
+\normalsize\textbf{论文：Neural Network State-Space Estimators} 
+\small \hfill \textit{ArXiv} \textit{一作} \\
 
 \noindent
-\normalsize\textbf{专利：一种基于卡方自适应因子的鲁棒控制方法} \small \hfill \textit{学生一作} \\
+\normalsize\textbf{论文：Contact-Anchored Proprioceptive Odometry for Quadruped Robots} 
+\small \hfill \textit{ArXiv} \textit{一作} \\
+
+\noindent
+\normalsize\textbf{专利：针对周期运动目标的自适应无迹卡尔曼滤波器设计方法} \small \hfill \textit{学生一作} \\
+
+% CN202211553537.1
+% 2022.12.06
+% \small 该发明提出了一种针对运动方程不完全已知的周期运动目标的自适应无迹卡尔曼滤波器设计方法，以改善在状态估计中对周期运动目标的估计误差和滤波曲线的平滑性，满足更高精度的滤波需求，有效改善了无迹卡尔曼滤波器的滤波效果。\\
+
+\noindent
+\normalsize\textbf{专利：基于多自适应因子的交互式鲁棒状态估计器设计方法} \small \hfill \textit{学生一作} \\
+
+% CN202211618386.3
+% 2022.12.15
+% \small 该发明提出了一种基于多自适应因子的交互式鲁棒状态估计器设计方法，通过多自适应因子的应用，在复杂的观测噪声激增情况下实现了快速估计和优化估计器性能，提高了估计精度和曲线平滑性。\\
+
+\noindent
+\normalsize\textbf{专利：一种基于卡方自适应因子的鲁棒滤波方法} \small \hfill \textit{学生一作} \\
 
 % CN202011502653.1
 % 2020.12.17
 % \small 该发明提出了一种基于卡方自适应因子的鲁棒滤波方法，以改善在观测噪声激增情况下的滤波效果。传统鲁棒滤波方法无法适应观测噪声激增，而本发明通过统计学方法快速估计实际观测噪声，有效提升滤波器的滤波精度和曲线平滑性，且额外计算复杂度少。\\
 
-\noindent
-\normalsize\textbf{专利：基于多自适应因子的交互式鲁棒状态估计器} \small \hfill \textit{学生一作} \\
-
-% CN202211618386.3
-% 2022.12.15
-% \small 该发明提出了一种基于多自适应因子的交互式鲁棒状态估计器设计方法，通过多自适应因子的应用，在复杂的观测噪声激增情况下实现了快速估计和优化估计器性能，提高了估计精度和曲线平滑性。\\
 
 \noindent
 \normalsize\textbf{专利：一种基于历史状态的变参数卡尔曼滤波器设计方法} \small \hfill \textit{学生一作} \\
@@ -552,12 +556,6 @@
 % 2022.11.28
 % \small 该发明提出了一种基于历史状态的变参数卡尔曼滤波器设计方法，通过引入常比例参数、变比例参数、离线线性回归参数、在线定存储量线性回归参数和在线增量法线性回归参数的参数设定方法，实现了对滤波器预测效果的有效改善，同时仅增加较少的额外计算复杂度。\\
 
-\noindent
-\normalsize\textbf{专利：一种针对周期运动目标的自适应无迹卡尔曼滤波器} \small \hfill \textit{学生一作} \\
-
-% CN202211553537.1
-% 2022.12.06
-% \small 该发明提出了一种针对运动方程不完全已知的周期运动目标的自适应无迹卡尔曼滤波器设计方法，以改善在状态估计中对周期运动目标的估计误差和滤波曲线的平滑性，满足更高精度的滤波需求，有效改善了无迹卡尔曼滤波器的滤波效果。\\
 
 \noindent
 \normalsize\textbf{专利：一种基于意图推定的交互式多模型状态估计方法} \small \hfill \textit{学生一作} \\
@@ -585,7 +583,7 @@
 \cvsection{工作成果展示}
 
 \vspace{-2pt}
-\begin{center}\small \textbf{🎥 以下内容是工程开发部署时的节点性记录（可点击跳转）}\end{center}
+\begin{center}\small \textbf{\faVideoCamera\ 以下内容是工程开发部署时的节点性记录（可点击跳转）}\end{center}
 
 \begingroup
 \footnotesize
@@ -600,51 +598,51 @@
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}\centering
-\href{https://www.bilibili.com/video/BV18Q9JYEEdn/}{\includegraphics[width=0.8\linewidth]{室内行走.jpg}}\\
-\href{https://www.bilibili.com/video/BV18Q9JYEEdn/}{\textbf{室内行走误差 0.5\%-1\%}}
+\href{https://www.bilibili.com/video/BV18Q9JYEEdn}{\includegraphics[width=0.8\linewidth]{室内行走.jpg}}\\
+\href{https://www.bilibili.com/video/BV18Q9JYEEdn}{\textbf{室内行走误差 0.5\%-1\%}}
 \end{minipage}
 \\[24pt]  
 
 % 3 左 | 4 右
 \begin{minipage}[t]{\linewidth}\centering
-\href{https://www.bilibili.com/video/BV1VV9ZYZEcH/}{\includegraphics[width=0.8\linewidth]{爬楼梯.jpg}}\\
-\href{https://www.bilibili.com/video/BV1VV9ZYZEcH/}{\textbf{爬楼梯高度误差 <\,5\,cm}}
+\href{https://www.bilibili.com/video/BV1VV9ZYZEcH}{\includegraphics[width=0.8\linewidth]{爬楼梯.jpg}}\\
+\href{https://www.bilibili.com/video/BV1VV9ZYZEcH}{\textbf{爬楼梯高度误差 <\,5cm}}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}\centering
-\href{https://www.bilibili.com/video/BV1BhRAYDEsV/}{\includegraphics[width=0.8\linewidth]{户外行走.jpg}}\\
-\href{https://www.bilibili.com/video/BV1BhRAYDEsV/}{\textbf{户外行走 380\,m 误差 3.3\%}}
+\href{https://www.bilibili.com/video/BV1BhRAYDEsV}{\includegraphics[width=0.8\linewidth]{户外行走.jpg}}\\
+\href{https://www.bilibili.com/video/BV1BhRAYDEsV}{\textbf{户外行走 380m 误差 3.3\%}}
 \end{minipage}
 \\[24pt]  
 
 % 5 左 | 6 右
 \begin{minipage}[t]{\linewidth}\centering
-\href{https://www.bilibili.com/video/BV1HCQBYUEvk/}{\includegraphics[width=0.8\linewidth]{导航和语音交互.jpg}}\\
-\href{https://www.bilibili.com/video/BV1HCQBYUEvk/}{\textbf{语音交互 + 地图导航}}
+\href{https://www.bilibili.com/video/BV1HCQBYUEvk}{\includegraphics[width=0.8\linewidth]{导航和语音交互.jpg}}\\
+\href{https://www.bilibili.com/video/BV1HCQBYUEvk}{\textbf{语音交互 + 地图导航}}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}\centering
-\href{https://www.bilibili.com/video/BV1faG1z3EFF/}{\includegraphics[width=0.8\linewidth]{人脸识别跟踪与光点跟踪.jpg}}\\
-\href{https://www.bilibili.com/video/BV1faG1z3EFF/}{\textbf{人脸识别跟踪 + 光点跟踪}}
+\href{https://www.bilibili.com/video/BV1pXEdzFECW}{\includegraphics[width=0.8\linewidth]{AR眼镜头部运动跟随.jpg}}\\
+\href{https://www.bilibili.com/video/BV1pXEdzFECW}{\textbf{AR 眼镜头部运动跟随}}
 \end{minipage}
 \\[24pt]  
 
 % 7 左 | 8 右
 \begin{minipage}[t]{\linewidth}\centering
-\href{https://www.bilibili.com/video/BV1pXEdzFECW}{\includegraphics[width=0.8\linewidth]{AR眼镜头部运动跟随.jpg}}\\
-\href{https://www.bilibili.com/video/BV1pXEdzFECW}{\textbf{AR 眼镜头部运动跟随}}
+\href{https://www.bilibili.com/video/BV18v8xzJE4G}{\includegraphics[width=0.8\linewidth]{YOLO无人机识别.jpg}}\\
+\href{https://www.bilibili.com/video/BV18v8xzJE4G}{\textbf{YOLO 无人机识别与跟随}}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}\centering
-\href{https://www.bilibili.com/video/BV18v8xzJE4G}{\includegraphics[width=0.8\linewidth]{YOLO无人机识别.jpg}}\\
-\href{https://www.bilibili.com/video/BV18v8xzJE4G}{\textbf{YOLO 无人机识别与跟随}}
+\href{https://www.bilibili.com/video/BV1FN5a6cEU8}{\includegraphics[width=0.8\linewidth]{统一架构.jpg}}\\
+\href{https://www.bilibili.com/video/BV1FN5a6cEU8}{\textbf{腿式/轮腿式统一算法架构}}
 \end{minipage}
 \\[24pt]  
 
 % 9 左 | 10 右
 \begin{minipage}[t]{\linewidth}\centering
-\href{https://www.bilibili.com/video/BV1fTY7z7E5T}{\includegraphics[width=0.8\linewidth]{多图像源融合估计.jpg}}\\
-\href{https://www.bilibili.com/video/BV1fTY7z7E5T}{\textbf{机器狗光电吊舱与固定相机协同}}
+\href{https://www.bilibili.com/video/BV1SnRQBwEFK}{\includegraphics[width=0.8\linewidth]{多图像源融合估计.jpg}}\\
+\href{https://www.bilibili.com/video/BV1SnRQBwEFK}{\textbf{机器狗光电吊舱与固定相机协同}}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}\centering
